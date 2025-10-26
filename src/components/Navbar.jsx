@@ -155,20 +155,16 @@ function Navbar() {
           <div style={{ display: "flex", alignItems: "center", gap: "14px" }}>
             <HoverLink to="/register">Register</HoverLink>
             <img
-              src={
-                user.isLoggedIn && user.avatarUrl
-                  ? user.avatarUrl
-                  : "../public/avatar.png"
-              }
+              src={user.isLoggedIn && user.avatarUrl ? user.avatarUrl : "/avatar.png"}
               alt="User Avatar"
               style={{
-                width: "40px",
-                height: "40px",
-                borderRadius: "50%",
-                objectFit: "cover",
-                border: "2px solid #fff",
-                boxShadow: "0 2px 6px rgba(0,0,0,0.15)",
-                cursor: "default",
+              width: "40px",
+              height: "40px",
+              borderRadius: "50%",
+              objectFit: "cover",
+              border: "2px solid #fff",
+              boxShadow: "0 2px 6px rgba(0,0,0,0.15)",
+              cursor: "default",
               }}
               title={user.isLoggedIn && user.name ? user.name : "Guest"}
             />
