@@ -157,6 +157,9 @@ function Navbar() {
             <img
               src={user.isLoggedIn && user.avatarUrl ? user.avatarUrl : "/avatar.png"}
               alt="User Avatar"
+              onError={(e) => {
+              e.currentTarget.src = "/avatar.png";            
+              }}
               style={{
               width: "40px",
               height: "40px",
@@ -166,8 +169,8 @@ function Navbar() {
               boxShadow: "0 2px 6px rgba(0,0,0,0.15)",
               cursor: "default",
               }}
-              title={user.isLoggedIn && user.name ? user.name : "Guest"}
-            />
+             title={user.isLoggedIn && user.name ? user.name : "Guest"}
+            /> 
             <div
               style={{
                 fontWeight: 600,
