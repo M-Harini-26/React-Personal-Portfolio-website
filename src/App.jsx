@@ -8,8 +8,8 @@ import Footer from "./components/Footer.jsx";
 import Gallery from "./components/Gallery.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Services1 from "./components/Services1.jsx";
-import Services2 from "./components/services2.jsx";
-import Services3 from "./components/services3.jsx";
+import Services2 from "./components/Services2.jsx";
+import Services3 from "./components/Services3.jsx";
 import Register from "./components/Register.jsx";
 export default function App() {
   return (
